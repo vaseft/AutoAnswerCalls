@@ -1,0 +1,28 @@
+plugins { id 'com.android.application' }
+
+// Optional ASCII build directory for older Windows JDKs with non-ASCII workspace paths.
+if (providers.gradleProperty('buildRoot').isPresent()) {
+    layout.buildDirectory = file(providers.gradleProperty('buildRoot').get())
+}
+
+android {
+    namespace 'cn.lightanswer.app'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'cn.lightanswer.app'
+        minSdk 29
+        targetSdk 36
+        versionCode 1
+        versionName '1.0.0'
+        testInstrumentationRunner 'cn.lightanswer.app.SmokeTestRunner'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildTypes { release { minifyEnabled false } }
+}
+
+dependencies { testImplementation 'junit:junit:4.13.2' }
+
+tasks.withType(Test).configureEach { defaultCharacterEncoding = 'UTF-8' }

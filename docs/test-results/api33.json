@@ -1,0 +1,65 @@
+[
+  {
+    "scenario": "screen-on",
+    "passed": true,
+    "state": "ACTIVE",
+    "observedWithinMs": 681,
+    "asleepBefore": false,
+    "asleepAfter": false,
+    "appLog": "--------- beginning of main\n11-13 14:45:55.435 I/LightAnswer( 3559): AUTO_ANSWER_REQUEST id=200\n11-13 14:45:55.649 I/LightAnswer( 3559): AUTO_ANSWER_CONNECTED id=200"
+  },
+  {
+    "scenario": "screen-off",
+    "passed": true,
+    "state": "ACTIVE",
+    "observedWithinMs": 300,
+    "asleepBefore": true,
+    "asleepAfter": true,
+    "appLog": "--------- beginning of main\n11-13 14:45:59.645 I/LightAnswer( 3559): AUTO_ANSWER_REQUEST id=200\n11-13 14:45:59.713 I/LightAnswer( 3559): AUTO_ANSWER_CONNECTED id=200"
+  },
+  {
+    "scenario": "cold-start-with-screen-off",
+    "passed": true,
+    "state": "ACTIVE",
+    "observedWithinMs": 436,
+    "asleepBefore": true,
+    "asleepAfter": true,
+    "appLog": "--------- beginning of main\n11-13 14:46:02.711 I/LightAnswer( 3852): AUTO_ANSWER_REQUEST id=200\n11-13 14:46:02.817 I/LightAnswer( 3852): AUTO_ANSWER_CONNECTED id=200"
+  },
+  {
+    "scenario": "deep-idle-with-screen-off",
+    "passed": true,
+    "state": "ACTIVE",
+    "observedWithinMs": 512,
+    "asleepBefore": true,
+    "asleepAfter": true,
+    "appLog": "--------- beginning of main\n11-13 14:46:05.840 I/LightAnswer( 3852): AUTO_ANSWER_REQUEST id=200\n11-13 14:46:05.916 I/LightAnswer( 3852): AUTO_ANSWER_CONNECTED id=200"
+  },
+  {
+    "scenario": "pin-locked-with-screen-off",
+    "passed": true,
+    "state": "ACTIVE",
+    "observedWithinMs": 409,
+    "asleepBefore": true,
+    "asleepAfter": true,
+    "appLog": "--------- beginning of main\n11-13 14:46:11.076 I/LightAnswer( 3852): AUTO_ANSWER_REQUEST id=200\n11-13 14:46:11.150 I/LightAnswer( 3852): AUTO_ANSWER_CONNECTED id=200"
+  },
+  {
+    "scenario": "disabled-stays-ringing",
+    "passed": true,
+    "state": "RINGING",
+    "observedWithinMs": 267,
+    "asleepBefore": true,
+    "asleepAfter": false,
+    "appLog": ""
+  },
+  {
+    "scenario": "reenabled-short-number",
+    "passed": true,
+    "state": "ACTIVE",
+    "observedWithinMs": 321,
+    "asleepBefore": true,
+    "asleepAfter": true,
+    "appLog": "--------- beginning of main\n11-13 14:46:20.683 I/LightAnswer( 4479): AUTO_ANSWER_REQUEST id=200\n11-13 14:46:20.767 I/LightAnswer( 4479): AUTO_ANSWER_CONNECTED id=200"
+  }
+]
